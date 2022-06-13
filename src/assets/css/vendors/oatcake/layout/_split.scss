@@ -1,0 +1,41 @@
+.split {
+    display: flex;
+    flex-direction: column-reverse;
+
+    
+    .one,
+    .two {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include media-md-lg{
+            width: 50%;
+        }
+    }
+    .one {
+        text-align: center;
+        margin-top: 1rem;
+
+        p {
+            max-width: 350px;
+
+            @include media-md-lg{
+                width: 90%;
+            }
+        }
+
+        @include media-md-lg{
+            align-items: start;
+            text-align: start;
+            margin-top: 0rem;
+        }
+    }
+
+    @include media-md-lg {
+        flex-direction: row;
+    }
+}
+

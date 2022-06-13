@@ -1,0 +1,5 @@
+{
+    "layout": "docs.njk",
+    "tags": "post",
+    "templateEngineOverride": "njk,md"
+}

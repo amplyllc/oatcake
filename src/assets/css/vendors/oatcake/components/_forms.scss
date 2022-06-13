@@ -1,0 +1,28 @@
+#contact-form {
+  max-width: 500px;
+
+  input,
+  textarea {
+    background-color: white;
+    font-family: map.get($fonts, "body");
+    font-size: .9rem;
+    border: none;
+    border-radius: 10px;
+    resize: vertical;
+    padding: 1rem;
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+  }
+}
+#login-form {
+  input,
+  textarea {
+    background-color: white;
+    font-family: map.get($fonts, "body");
+    font-size: .9rem;
+    border: none;
+    border-radius: 25px;
+    resize: vertical;
+    padding: 1rem;
+    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.1);
+  }
+}

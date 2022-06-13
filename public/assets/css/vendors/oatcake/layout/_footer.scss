@@ -1,0 +1,17 @@
+footer {
+  color: map.get($theme-colors, 'white');
+  
+  a {
+    color: map.get($theme-colors, 'white');
+
+    &:hover {
+        color: map.get($theme-colors, 'accent');
+    }
+  }
+  .footer-nav {
+    @include media-lg {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}

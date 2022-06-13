@@ -1,0 +1,45 @@
+// ===================
+// classes
+// ===================
+.grow:hover {
+    transform: scale(1.03);
+    @include transition-ease;
+}
+.shrink:hover {
+    transform: scale(0.97);
+    @include transition-ease;
+}
+.animate {
+    &.fadeIn {
+        animation: fadeIn 1s;
+        &.long {
+            animation: fadeIn 2s;
+        }
+    }
+    &.bounce {
+        animation: 2s bounce infinite;
+    }
+}
+
+// ===================
+// keyframes
+// ===================
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}

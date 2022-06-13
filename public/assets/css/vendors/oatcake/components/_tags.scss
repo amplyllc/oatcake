@@ -1,0 +1,58 @@
+.tag {
+  cursor: pointer;
+  padding: .1rem 1rem;
+
+  &.shadow {
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+  }
+
+  &.primary {
+    background: map.get($theme-colors, "primary");
+    color: map.get($theme-colors, "white");
+  }
+
+  &.secondary {
+    background: map.get($theme-colors, "secondary");
+    color: map.get($theme-colors, "white");
+  }
+  
+  &.accent {
+    background: map.get($theme-colors, "accent");
+    color: map.get($theme-colors, "white");
+  }
+
+  &.success {
+    background: map.get($colors, "success");
+    color: map.get($theme-colors, "white");
+  }
+
+  &.danger {
+    background: map.get($colors, "danger");
+    color: map.get($theme-colors, "white");
+  }
+
+  &.info {
+    background: map.get($colors, "info");
+    color: map.get($theme-colors, "white");
+  }
+
+  &.warning {
+    background: map.get($colors, "warning");
+    color: map.get($theme-colors, "white");
+  }
+
+  &.light {
+    background: map.get($colors, "light");
+    color: map.get($theme-colors, "black");
+  }
+
+  &.dark {
+    background: map.get($colors, "dark");
+    color: map.get($theme-colors, "white");
+  }
+
+  &.black {
+    background: map.get($theme-colors, "black");
+    color: map.get($theme-colors, "white");
+  }
+}

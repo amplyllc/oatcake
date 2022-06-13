@@ -1,0 +1,29 @@
+---
+title: Contact
+layout: 'base.njk'
+---
+
+<!-- *** contact *** -->
+<section id="contact" class="d-flex flex-column default my-5">
+    <h2 class="text-primary mb-1">Contact</h2>
+    <form id="contact-form" name="contact-{{ page }}" class="w-90" action="/success" netlify-honeypot="bot-field" netlify>
+        <div class="d-flex px-1 py-05">
+            <input class="w-50 me-1" type="text" name="name" class="form-control" placeholder="Your name" aria-label="Full name" required>
+            <input class="w-50" type="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="d-flex px-1 py-05">
+            <input class="w-100 mt-1" type="subject" class="form-control" name="subject" placeholder="Subject of message" required>
+        </div>
+        <div class="d-flex px-1 py-05">
+            <textarea class="w-100 mt-1" name="message" rows="3" placeholder="Your message" required></textarea>
+        </div>
+        <p class="d-none">
+            <label>
+            Don’t fill this out if you’re human: <input name="bot-field"/>
+            </label>
+        </p>
+        <div class="d-flex default px-1 mt-1">
+            <button class="button default rounded secondary border-secondary border-1 w-50" type="submit">Send</button>
+        </div>
+    </form>
+</section><!-- /contact -->

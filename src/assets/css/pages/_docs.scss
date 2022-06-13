@@ -1,0 +1,42 @@
+#docs {
+    p {
+        padding: 1rem 0;
+    }
+    .accordion {
+        width: 100%;
+
+        @include media-md {
+            width: fit-content;
+        }
+    }
+    article {
+        width: 100%;
+        margin-top: 3rem;
+
+        @include media-md {
+            width: 88%;
+            margin-top: 0;
+        }
+        .accordion {
+            @include media-md {
+                width: 97%;
+            }
+        }
+    }
+    .content {
+        width: 100%;
+        overflow: scroll;
+
+        @include media-md {
+            width: 85%;
+            padding-left: 3rem;
+        }
+    }
+    .code {
+        background-color: map.get($colors, 'highlight');
+        border-radius: 0 0 10px 10px;
+    }
+    @include media-md {
+        height: calc(100vh - 134px);
+    }
+}

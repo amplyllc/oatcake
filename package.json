@@ -1,0 +1,30 @@
+{
+  "name": "oatcake",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amplyllc/oatcake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amplyllc/oatcake/issues"
+  },
+  "homepage": "https://github.com/amplyllc/oatcake#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "luxon": "^2.4.0"
+  },
+  "dependencies": {
+    "markdown-it": "^12.2.0",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-toc-done-right": "^4.2.0"
+  }
+}

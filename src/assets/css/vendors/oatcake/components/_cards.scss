@@ -1,0 +1,69 @@
+// ===================
+// card 1
+// ===================
+.card-2 {
+    background-color: map.get($theme-colors, 'white');
+    border-radius: 25px;
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-1 {
+    border-radius: 15px;
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+
+    img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .text {
+        padding: 2rem;
+
+        h3 {
+            padding: .5rem .5rem
+        }
+    }
+}
+
+.card-2 {
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.card {
+    max-width: 375px;
+
+    .img {
+        min-width: 350px;
+        min-height: 250px;
+        border-radius: 10px;
+
+        &.one {
+            background-color: #ffffff;
+            opacity: 0.8;
+            background: linear-gradient(135deg, #cec00055 25%, transparent 25%) -12px 0/ 24px 24px, linear-gradient(225deg, #cec000 25%, transparent 25%) -12px 0/ 24px 24px, linear-gradient(315deg, #cec00055 25%, transparent 25%) 0px 0/ 24px 24px, linear-gradient(45deg, #cec000 25%, #ffffff 25%) 0px 0/ 24px 24px;
+        }
+        &.two {
+            background-color: #e5e5f7;
+            opacity: 0.8;
+            background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 26px ), repeating-linear-gradient( map.get($theme-colors, "primary-dark"), map.get($theme-colors, "primary") );
+        }
+        &.three {
+            background-color: #e5e5f7;
+            opacity: 0.8;
+            background-image: linear-gradient(45deg, map.get($theme-colors, "secondary") 50%, rgb(255, 255, 255) 50%);
+            background-size: 26px 26px;
+        }
+        @include media-lg {
+            min-width: 300px;
+        }
+    }
+    .content {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}

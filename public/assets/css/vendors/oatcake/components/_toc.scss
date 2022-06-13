@@ -1,0 +1,32 @@
+.table-of-contents {
+    display: none;
+    width: fit-content;
+    min-width: 120px;
+    padding-left: 1rem;
+
+    a {
+        color: black;
+
+        &:hover {
+            color: map.get($theme-colors, "primary");
+        }
+    }
+
+    li {
+        list-style: none;
+        padding-top: .5rem;
+    }
+
+    ol li {
+        font-weight: bold;
+    }
+
+    ol li ol li {
+        padding-left: 1rem;
+        font-weight: 100;
+    }
+
+    @include media-md {
+        display: block;
+    }
+}

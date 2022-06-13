@@ -1,0 +1,13 @@
+#article-snippet {
+    .article-image {
+        @include media-md {
+            width: 40%;
+        }
+    }
+    .article-text {
+        @include media-md {
+            width: 60%;
+            padding-right: 2rem;
+        }
+    }
+}

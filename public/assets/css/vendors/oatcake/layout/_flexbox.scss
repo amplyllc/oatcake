@@ -1,0 +1,167 @@
+// ===================
+// flexbox
+// ===================
+.d-flex {
+  display: flex;
+
+  &.default {
+    justify-content: center;
+    align-items: center;
+  }
+}
+// flex flow
+.row-wrap {
+  flex-flow: row wrap;
+}
+// media classes
+.sm-d-flex {
+  @include media-sm {
+    display: flex;
+  }
+}
+.sm-md-d-flex {
+  @include media-sm-md {
+    display: flex;
+  }
+}
+.md-d-flex {
+  @include media-md {
+    display: flex;
+  }
+}
+.lg-d-flex {
+  @include media-lg {
+    display: flex;
+  }
+}
+.xl-d-flex {
+  @include media-xl {
+    display: flex;
+  }
+}
+// flex direction
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.max-sm-flex-column {
+  @include media-max-sm {
+    flex-direction: column;
+  }
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.sm-flex-row {
+  @include media-sm {
+    flex-direction: row;
+  }
+}
+.md-flex-row {
+  @include media-md {
+    flex-direction: row;
+  }
+}
+.lg-flex-row {
+  @include media-lg {
+    flex-direction: row;
+  }
+}
+.xl-flex-row {
+  @include media-xl {
+    flex-direction: row;
+  }
+}
+// justify content
+.j-c-s {
+  justify-content: start;
+}
+.j-c-spc {
+  justify-content: space-between;
+}
+.j-c-c {
+  justify-content: center;
+}
+.j-c-e {
+  justify-content: end;
+}
+.sm-j-c-s {
+  @include media-sm {
+    justify-content: start;
+  }
+}
+.sm-j-c-c {
+  @include media-sm {
+    justify-content: center;
+  }
+}
+.sm-j-c-e {
+  @include media-md {
+    justify-content: end;
+  }
+}
+.md-j-c-s {
+  @include media-md {
+    justify-content: start;
+  }
+}
+.md-j-c-c {
+  @include media-md {
+    justify-content: center;
+  }
+}
+.md-j-c-e {
+  @include media-md {
+    justify-content: end;
+  }
+}
+// align items
+.a-i-s {
+  align-items: start;
+}
+.a-i-c {
+  align-items: center;
+}
+.a-i-e {
+  align-items: end;
+}
+.sm-a-i-s {
+  @include media-sm {
+    align-items: start;
+  }
+}
+.sm-a-i-c {
+  @include media-sm {
+    align-items: center;
+  }
+}
+.sm-a-i-e {
+  @include media-md {
+    align-items: end;
+  }
+}
+.sm-md-a-i-s {
+  @include media-sm-md {
+    align-items: start;
+  }
+}
+.md-a-i-s {
+  @include media-md {
+    align-items: start !important;
+  }
+}
+.md-a-i-c {
+  @include media-md {
+    align-items: center;
+  }
+}
+.md-a-i-e {
+  @include media-md {
+    align-items: end;
+  }
+}

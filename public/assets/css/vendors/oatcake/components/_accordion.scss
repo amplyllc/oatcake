@@ -1,0 +1,74 @@
+.accordion {
+    min-width: 120px;
+    .container {
+        position: relative;
+        padding-top: 1rem;
+
+        &.active {
+            .content {
+                height: fit-content;
+            }
+            .label {
+                &::before {
+                    content: '-';
+                    font-size: inherit;
+                }
+            }
+        }
+        .content {
+            position: relative;
+            height: 0;
+            text-align: justify;
+            overflow: hidden;
+            transition: 0.5s;
+
+            li {
+                padding-top: 1rem;
+
+                @include media-md {
+                    padding-top: .5rem;
+                }
+            }
+        }
+        @include media-md {
+            padding-top: 0;
+        }
+    }
+    .label {
+        position: relative;
+        color: black;
+        cursor: pointer;
+        padding-top: .5rem;
+        min-width: 115px;
+        font-weight: bold;
+
+        &::before {
+            content: '+';
+            color: black;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            @include media-md {
+                right: -20px;
+            }
+        }
+        &:hover {
+            color: map.get($theme-colors, "primary");
+        }
+    }
+    
+    hr {
+        width: 100;
+        margin-left: 0;
+    }
+    a {
+        color: black;
+
+        &:hover {
+            color: map.get($theme-colors, "primary");
+        }
+    }
+}
+  
