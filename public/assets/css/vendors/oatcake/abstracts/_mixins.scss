@@ -1,0 +1,96 @@
+// ===================
+// general
+// ===================
+
+@mixin grow {
+    transform: scale(1.03);
+}
+
+@mixin shrink {
+    transform: scale(.97);
+}
+
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin theme($light-theme: true) {
+    @if ($light-theme) {
+      background-color: lighten($primary-color, 100%);
+      color: darken($text-color, 100%);
+    }
+}
+
+// ===================
+// media mixins
+// ===================
+
+    // small
+    @mixin media-sm {
+        @media screen and (min-width: map.get($media, "small")) {
+            @content;
+        }
+    }
+    @mixin media-max-sm {
+        @media screen and (max-width: map.get($media, "small")) {
+            @content;
+        }
+    }
+
+    // medium
+    @mixin media-md {
+        @media screen and (min-width: map.get($media, "medium")) {
+            @content;
+        }
+    }
+    @mixin media-max-md {
+        @media screen and (max-width: map.get($media, "medium")) {
+            @content;
+        }
+    }
+
+    // large
+    @mixin media-lg {
+        @media screen and (min-width: map.get($media, "large")) {
+            @content;
+        }
+    }
+    @mixin media-max-lg {
+        @media screen and (max-width: map.get($media, "large")) {
+            @content;
+        }
+    }
+
+    // x-large
+    @mixin media-xl {
+        @media screen and (min-width: map.get($media, "x-large")) {
+            @content;
+        }
+    }
+    @mixin media-max-xl {
+        @media screen and (max-width: map.get($media, "x-large")) {
+            @content;
+        }
+    }
+
+    // mid breakpoints
+    @mixin media-sm-md {
+        @media screen and (min-width: 594px) {
+            @content;
+        }
+    }
+    @mixin media-max-sm-md {
+        @media screen and (max-width: 594px) {
+            @content;
+        }
+    }
+    @mixin media-md-lg {
+        @media screen and (min-width: 896px) {
+            @content;
+        }
+    }
+    @mixin media-lg-xl {
+        @media screen and (min-width: 1312px) {
+            @content;
+        }
+    }

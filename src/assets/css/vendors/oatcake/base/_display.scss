@@ -1,0 +1,205 @@
+// ===================
+// none
+// ===================
+.d-none {
+  display: none;
+}
+.sm-d-none {
+  @include media-sm {
+    display: none;
+  }
+}
+.md-d-none {
+  @include media-md {
+    display: none;
+  }
+}
+.lg-d-none {
+  @include media-lg {
+    display: none;
+  }
+}
+.xl-d-none {
+  @include media-xl {
+    display: none;
+  }
+}
+// ===================
+// inline
+// ===================
+.d-inline {
+  display: inline;
+}
+.sm-d-inline {
+  @include media-sm {
+    display: inline;
+  }
+}
+.md-d-inline {
+  @include media-md {
+    display: inline;
+  }
+}
+.lg-d-inline {
+  @include media-lg {
+    display: inline;
+  }
+}
+.xl-d-inline {
+  @include media-xl {
+    display: inline;
+  }
+}
+// ===================
+// inline-block
+// ===================
+.d-inline-block {
+  display: inline-block;
+}
+.sm-d-inline-block {
+  @include media-sm {
+    display: inline-block;
+  }
+}
+.md-d-inline-block {
+  @include media-md {
+    display: inline-block;
+  }
+}
+.lg-d-inline-block {
+  @include media-lg {
+    display: inline-block;
+  }
+}
+.xl-d-inline-block {
+  @include media-xl {
+    display: inline-block;
+  }
+}
+// ===================
+// block
+// ===================
+.d-block {
+  display: block;
+}
+.sm-d-block {
+  @include media-sm {
+    display: block;
+  }
+}
+.sm-md-d-block {
+  @include media-sm-md {
+    display: block;
+  }
+}
+.md-d-block {
+  @include media-md {
+    display: block;
+  }
+}
+.lg-d-block {
+  @include media-lg {
+    display: block;
+  }
+}
+.xl-d-block {
+  @include media-xl {
+    display: block;
+  }
+}
+// ===================
+// table
+// ===================
+.d-table {
+  display: table;
+}
+.sm-d-table {
+  @include media-sm {
+    display: table;
+  }
+}
+.sm-md-d-table {
+  @include media-sm-md {
+    display: table;
+  }
+}
+.md-d-table {
+  @include media-md {
+    display: table;
+  }
+}
+.lg-d-table {
+  @include media-lg {
+    display: table;
+  }
+}
+.xl-d-table {
+  @include media-xl {
+    display: table;
+  }
+}
+
+// ===================
+// table-cell
+// ===================
+.d-table-cell {
+  display: table-cell;
+}
+.sm-d-table-cell {
+  @include media-sm {
+    display: table-cell;
+  }
+}
+.sm-md-d-table-cell {
+  @include media-sm-md {
+    display: table-cell;
+  }
+}
+.md-d-table-cell {
+  @include media-md {
+    display: table-cell;
+  }
+}
+.lg-d-table-cell {
+  @include media-lg {
+    display: table-cell;
+  }
+}
+.xl-d-table-cell {
+  @include media-xl {
+    display: table-cell;
+  }
+}
+
+// ===================
+// table-row
+// ===================
+.d-table-row {
+  display: table-row;
+}
+.sm-d-table-row {
+  @include media-sm {
+    display: table-row;
+  }
+}
+.sm-md-d-table-row {
+  @include media-sm-md {
+    display: table-row;
+  }
+}
+.md-d-table-row {
+  @include media-md {
+    display: table-row;
+  }
+}
+.lg-d-table-row {
+  @include media-lg {
+    display: table-row;
+  }
+}
+.xl-d-table-row {
+  @include media-xl {
+    display: table-row;
+  }
+}
+

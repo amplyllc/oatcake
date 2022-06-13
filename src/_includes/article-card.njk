@@ -1,0 +1,10 @@
+<div class="card py-2">
+    <div class="img one"></div>
+    <div class="content d-flex flex-column px-2">
+        <div class="d-flex j-c-spc mt-1">
+            <a class="tag black round underline">{{ post.data.category }}</a>
+            <small>{{ post.data.date | postDate }}</small>
+        </div>
+        <a href="{{ post.url }}" class="mt-1 underline"><h2 class="text-primary">{{ post.data.title }}</h2></a>
+    </div>
+</div>

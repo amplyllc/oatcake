@@ -1,0 +1,175 @@
+.button {
+  padding: 0rem 1rem;
+  cursor: pointer;
+
+  &.default {
+    padding: .5rem 1.5rem;
+  }
+  &.double {
+    padding: .5rem 3rem;
+  }
+  &.shadow {
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+  }
+  &.primary {
+    background: map.get($theme-colors, "primary");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($theme-colors, "primary") !important;
+      border: solid 3px map.get($theme-colors, "primary");
+    }
+    &:hover {
+      background: map.get($theme-colors, "primary") !important;
+      color: map.get($theme-colors, "foreground") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.secondary {
+    background: map.get($theme-colors, "secondary");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($theme-colors, "secondary") !important;
+      border: solid 3px map.get($theme-colors, "secondary");
+    }
+    &:hover {
+      background: map.get($theme-colors, "secondary") !important;
+      color: map.get($theme-colors, "accent") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.accent {
+    background: map.get($theme-colors, "accent");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($theme-colors, "accent") !important;
+      border: solid 3px map.get($theme-colors, "accent");
+    }
+    &:hover {
+      background: map.get($theme-colors, "accent") !important;
+      color: map.get($theme-colors, "primary") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.success {
+    background: map.get($colors, "success");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "success") !important;
+      border: solid 3px map.get($colors, "success");
+    }
+    &:hover {
+      background: map.get($colors, "success") !important;
+      color: map.get($theme-colors, "black") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.danger {
+    background: map.get($colors, "danger");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "danger") !important;
+      border: solid 3px map.get($colors, "danger");
+    }
+    &:hover {
+      background: map.get($colors, "danger") !important;
+      color: map.get($theme-colors, "black") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.info {
+    background: map.get($colors, "info");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "info") !important;
+      border: solid 3px map.get($colors, "info");
+    }
+    &:hover {
+      background: map.get($colors, "info") !important;
+      color: map.get($theme-colors, "black") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.warning {
+    background: map.get($colors, "warning");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "warning") !important;
+      border: solid 3px map.get($colors, "warning");
+    }
+    &:hover {
+      background: map.get($colors, "warning");
+      color: map.get($theme-colors, "black") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.light {
+    background: map.get($colors, "light");
+    color: map.get($theme-colors, "black");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "light") !important;
+      border: solid 3px map.get($colors, "light");
+    }
+    &:hover {
+      background: map.get($colors, "light") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  &.dark {
+    background: map.get($colors, "dark");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "dark") !important;
+      border: solid 3px map.get($colors, "dark");
+    }
+    &:hover {
+      background: map.get($colors, "dark") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  &.black {
+    background: map.get($theme-colors, "black");
+    color: map.get($theme-colors, "white");
+  }
+}
+.underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}

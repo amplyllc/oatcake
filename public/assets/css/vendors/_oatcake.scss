@@ -1,0 +1,659 @@
+// ===================
+// margin
+// ===================
+.m-0 {
+  margin: 0;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.m-4 {
+  margin: 4rem;
+}
+.m-5 {
+  margin: 5rem;
+}
+
+// margin: x-axis
+.mx-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+.mx-1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.mx-2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.mx-3 {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+.mx-4 {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+.mx-5 {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// margin: y-axis
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.my-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// margin: top
+.mt-0 {
+  margin-top: 0;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mt-auto {
+  margin-top: auto;
+}
+
+// margin: right
+.me-0 {
+  margin-right: 0;
+}
+.me-1 {
+  margin-right: 1rem;
+}
+.me-2 {
+  margin-right: 2rem;
+}
+.me-3 {
+  margin-right: 3rem;
+}
+.me-4 {
+  margin-right: 4rem;
+}
+.me-5 {
+  margin-right: 5rem;
+}
+.me-auto {
+  margin-right: auto;
+}
+
+// margin: bottom
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+
+// margin: left
+.ms-0 {
+  margin-left: 0;
+}
+.ms-1 {
+  margin-left: 1rem;
+}
+.ms-2 {
+  margin-left: 2rem;
+}
+.ms-3 {
+  margin-left: 3rem;
+}
+.ms-4 {
+  margin-left: 4rem;
+}
+.ms-5 {
+  margin-left: 5rem;
+}
+.ms-auto {
+  margin-left: auto;
+}
+
+// ===================
+// padding
+// ===================
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+.p-5 {
+  padding: 5rem;
+}
+.p-auto {
+  padding: auto;
+}
+
+// padding: x-axis
+.px-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.px-05 {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.px-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.px-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.px-3 {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.px-4 {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+.px-5 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.px-auto {
+  padding-right: auto;
+  padding-left: auto;
+}
+// padding: y-axis
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.py-05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+// padding: top
+.pt-0 {
+  padding-top: 0;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
+.pt-3 {
+  padding-top: 3rem;
+}
+.pt-4 {
+  padding-top: 4rem;
+}
+.pt-5 {
+  padding-top: 5rem;
+}
+.pt-auto {
+  padding-top: auto;
+}
+
+// padding: right
+.pe-0 {
+  padding-right: 0;
+}
+.pe-1 {
+  padding-right: 1rem;
+}
+.pe-2 {
+  padding-right: 2rem;
+}
+.pe-3 {
+  padding-right: 3rem;
+}
+.pe-4 {
+  padding-right: 4rem;
+}
+.pe-5 {
+  padding-right: 5rem;
+}
+.pe-auto {
+  padding-right: auto;
+}
+
+// padding: bottom
+.pb-0 {
+  padding-bottom: 0;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.pb-3 {
+  padding-bottom: 3rem;
+}
+.pb-4 {
+  padding-bottom: 4rem;
+}
+.pb-5 {
+  padding-bottom: 5rem;
+}
+.pb-auto {
+  padding-bottom: auto;
+}
+
+// padding: left
+.ps-0 {
+  padding-left: 0;
+}
+.ps-1 {
+  padding-left: 1rem;
+}
+.ps-2 {
+  padding-left: 2rem;
+}
+.ps-3 {
+  padding-left: 3rem;
+}
+.ps-4 {
+  padding-left: 4rem;
+}
+.ps-5 {
+  padding-left: 5rem;
+}
+.ps-auto {
+  padding-left: auto;
+}
+
+// ===================
+// width
+// ===================
+.w-100 {
+  width: 100%;
+}
+.w-95 {
+  width: 95%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-50 {
+  width: 50%;
+}
+.md-w-50 {
+  @include media-md {
+    width: 50%;
+  }
+}
+.w-45 {
+  width: 45%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-10 {
+  width: 10%;
+}
+
+// ===================
+// flexbox
+// ===================
+.d-flex {
+  display: flex;
+
+  &.default {
+    justify-content: center;
+    align-items: center;
+  }
+}
+// media classes
+.sm-d-flex {
+  @include media-sm {
+    display: flex;
+  }
+}
+.sm-md-d-flex {
+  @include media-sm-md {
+    display: flex;
+  }
+}
+.md-d-flex {
+  @include media-md {
+    display: flex;
+  }
+}
+.lg-d-flex {
+  @include media-lg {
+    display: flex;
+  }
+}
+.xl-d-flex {
+  @include media-xl {
+    display: flex;
+  }
+}
+// flex direction
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.sm-flex-row {
+  @include media-sm {
+    flex-direction: row;
+  }
+}
+.sm-md-flex-row {
+  @include media-sm-md {
+    flex-direction: row;
+  }
+}
+.md-flex-row {
+  @include media-md {
+    flex-direction: row;
+  }
+}
+.lg-flex-row {
+  @include media-lg {
+    flex-direction: row;
+  }
+}
+.xl-flex-row {
+  @include media-xl {
+    flex-direction: row;
+  }
+}
+// justify content
+.j-c-s {
+  justify-content: start;
+}
+.j-c-spc {
+  justify-content: space-between;
+}
+.j-c-c {
+  justify-content: center;
+}
+.j-c-e {
+  justify-content: end;
+}
+.sm-j-c-s {
+  @include media-sm {
+    justify-content: start;
+  }
+}
+.sm-j-c-c {
+  @include media-sm {
+    justify-content: center;
+  }
+}
+.sm-j-c-e {
+  @include media-md {
+    justify-content: end;
+  }
+}
+.md-j-c-s {
+  @include media-md {
+    justify-content: start;
+  }
+}
+.md-j-c-c {
+  @include media-md {
+    justify-content: center;
+  }
+}
+.md-j-c-e {
+  @include media-md {
+    justify-content: end;
+  }
+}
+// align items
+.a-i-s {
+  align-items: start;
+}
+.a-i-c {
+  align-items: center;
+}
+.a-i-e {
+  align-items: end;
+}
+.sm-a-i-s {
+  @include media-sm {
+    align-items: start;
+  }
+}
+.sm-a-i-c {
+  @include media-sm {
+    align-items: center;
+  }
+}
+.sm-a-i-e {
+  @include media-md {
+    align-items: end;
+  }
+}
+.sm-md-a-i-s {
+  @include media-sm-md {
+    align-items: start;
+  }
+}
+.md-a-i-s {
+  @include media-md {
+    align-items: start;
+  }
+}
+.md-a-i-c {
+  @include media-md {
+    align-items: center;
+  }
+}
+.md-a-i-e {
+  @include media-md {
+    align-items: end;
+  }
+}
+
+// ===================
+// text
+// ===================
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+.text-center {
+  text-align: center;
+}
+.sm-md-text-start {
+  @include media-sm-md {
+    text-align: start;
+  }
+}
+.md-text-start {
+  @include media-md {
+    text-align: start;
+  }
+}
+
+// ===================
+// background
+// ===================
+.bg-white {
+  background-color: white;
+}
+.bg-black {
+  background-color: black;
+}
+
+// ===================
+// hide/show
+// ===================
+.hide {
+  display: none;
+}
+.sm-hide {
+  @include media-sm {
+    display: none;
+  }
+}
+.sm-md-hide {
+  @include media-sm-md {
+    display: none;
+  }
+}
+.md-hide {
+  @include media-md {
+    display: none;
+  }
+}
+.lg-hide {
+  @include media-lg {
+    display: none;
+  }
+}
+.xl-hide {
+  @include media-xl {
+    display: none;
+  }
+}
+.show {
+  display: block;
+}
+.sm-show {
+  @include media-sm {
+    display: block;
+  }
+}
+.sm-md-show {
+  @include media-sm-md {
+    display: block;
+  }
+}
+.md-show {
+  @include media-md {
+    display: block;
+  }
+}
+.lg-show {
+  @include media-lg {
+    display: block;
+  }
+}
+.xl-show {
+  @include media-xl {
+    display: block;
+  }
+}

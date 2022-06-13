@@ -1,0 +1,8 @@
+@import "functions";
+
+@import "mixins";
+// A MIXIN is a block of code that lets us group CSS declarations we may reuse 
+// throughout our site.
+
+@import "variables";
+// A VARIABLE is a value assigned to a name starting with $ (ex: $primary-color)

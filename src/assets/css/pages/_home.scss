@@ -1,0 +1,19 @@
+
+// ===================
+// landing
+// ===================
+#landing {
+  background-color: map.get($theme-colors, 'background');
+  height: calc(100vh - 67px);
+
+  img {
+      max-width: 490px;
+  }
+  .download {
+      margin-right: 1rem;
+
+      @include media-max-sm {
+        display: none;
+      }
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oatcake | {{title}}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png"/>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" ">
+    <meta property="og:title" content=" " />
+    <meta property="og:description" content=" " />
+    <meta property="og:type" content="website"/>
+    <!-- <meta property="og:image" content="https://website.com/img/ogimage.png"/> -->
+    <!-- <meta property="og:url" content="https://website.com" /> -->
+    <!-- <meta name="twitter:image:src" content="https://website.com/img/ogimage.png"> -->
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/fira-sans" type="text/css"/>  
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/muli" type="text/css"/>  
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+</head>
+<body>
+
+    {% include 'header.njk' %}
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    {% include 'footer.njk' %}
+
+    <!-- *** scripts *** -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/components.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+---
+title: Static Website Architecture
+layout: 'base.njk'
+---
+
+<!-- *** tutorials *** -->
+<section id="tutorials" class="d-flex flex-column default px-2 py-4">
+    <h2>Tutorials</h2>
+    <div class="grid-2 pt-2">
+        {%- for post in collections.tutorials -%}
+            {% include 'article-card.njk' %}
+        {%- endfor -%}
+    </div>
+</section><!-- /tutorials -->

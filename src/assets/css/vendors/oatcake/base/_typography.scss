@@ -1,0 +1,73 @@
+// ================================
+// font styles
+// ================================
+h1 {
+    font-family: map.get($fonts, "secondary");
+}
+h2,
+h3,
+h4 {
+    font-family: map.get($fonts, "heading");
+}
+body {
+    font-family: map.get($fonts, "body");
+}
+
+// ================================
+// font sizing
+// ================================
+$font-size: 100%;
+$ratio: 1.2;
+
+// calculate values
+$h6: $font-size * $ratio;
+$h5: $h6 * $ratio;
+$h4: $h5 * $ratio;
+$h3: $h4 * $ratio;
+$h2: $h3 * $ratio;
+$h1: $h2 * $ratio;
+
+body {
+    font-size: $font-size;
+}
+h4 {
+    font-size: $h6;
+    @include media-lg {
+        font-size: $h5;
+    }
+    @include media-xl {
+        font-size: $h4;
+    }
+}
+
+h3 {
+    font-size: $h5;
+    @include media-lg {
+        font-size: $h4;
+    }
+    @include media-xl {
+        font-size: $h3;
+    }
+}
+
+h2 {
+    font-size: $h4;
+    @include media-lg {
+        font-size: $h3;
+    }
+    @include media-xl {
+        font-size: $h2;
+    }
+}
+
+h1 {
+    font-size: $h3;
+    @include media-lg {
+        font-size: $h2;
+    }
+    @include media-xl {
+        font-size: $h1;
+    }
+}
+  
+

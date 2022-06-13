@@ -1,0 +1,33 @@
+// ===================
+// grid-1
+// ===================
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+.grid-2 {
+    @include media-lg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        justify-items: center;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+
+    @include media-sm-md {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-md-lg {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

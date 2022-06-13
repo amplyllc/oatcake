@@ -1,0 +1,127 @@
+// ===================
+// text
+// ===================
+.text-primary {
+  color: map.get($theme-colors, 'primary');
+}
+.text-secondary {
+  color: map.get($theme-colors, 'secondary');
+}
+.text-accent {
+  color: map.get($theme-colors, 'accent');
+}
+.text-background {
+  color: map.get($theme-colors, 'background');
+}
+.text-foreground {
+  color: map.get($theme-colors, 'foreground');
+}
+.text-success {
+  color: map.get($colors, 'success');
+}
+.text-danger {
+  color: map.get($colors, 'danger');
+}
+.text-warning {
+  color: map.get($colors, 'warning');
+}
+.text-info {
+  color: map.get($colors, 'info');
+}
+.text-light {
+  color: map.get($colors, 'light');
+}
+.text-dark {
+  color: map.get($colors, 'dark');
+}
+.text-white {
+  color: map.get($theme-colors, 'white');
+}
+.text-black {
+  color: map.get($theme-colors, 'black');
+}
+.text-grey {
+  color: map.get($theme-colors, 'grey');
+}
+
+// ===================
+// background
+// ===================
+.bg-primary {
+  background-color: map.get($theme-colors, 'primary');
+}
+.bg-secondary {
+  background-color: map.get($theme-colors, 'secondary');
+}
+.bg-accent {
+  background-color: map.get($theme-colors, 'accent');
+}
+.bg-background {
+  background-color: map.get($theme-colors, 'background');
+}
+.bg-foreground {
+  background-color: map.get($theme-colors, 'foreground');
+}
+.bg-success {
+  background-color: map.get($colors, 'success');
+}
+.bg-danger {
+  background-color: map.get($colors, 'danger');
+}
+.bg-warning {
+  background-color: map.get($colors, 'warning');
+}
+.bg-info {
+  background-color: map.get($colors, 'info');
+}
+.bg-light {
+  background-color: map.get($colors, 'light');
+}
+.bg-dark {
+  background-color: map.get($colors, 'dark');
+}
+.bg-white {
+  background-color: map.get($theme-colors, 'white');
+}
+.bg-black {
+  background-color: map.get($theme-colors, 'black');
+}
+.bg-grey {
+  background-color: map.get($theme-colors, 'grey');
+}
+
+// ===================
+// border
+// ===================
+.border-primary {
+  border-color: map.get($theme-colors, 'primary');
+}
+.border-secondary {
+  border-color: map.get($theme-colors, 'secondary');
+}
+.border-accent {
+  border-color: map.get($theme-colors, 'accent');
+}
+.border-success {
+  border-color: map.get($colors, 'success');
+}
+.border-danger {
+  border-color: map.get($colors, 'danger');
+}
+.border-warning {
+  border-color: map.get($colors, 'warning');
+}
+.border-info {
+  border-color: map.get($colors, 'info');
+}
+.border-light {
+  border-color: map.get($colors, 'light');
+}
+.border-dark {
+  border-color: map.get($colors, 'dark');
+}
+.border-white {
+  border-color: map.get($colors, 'white');
+}
+
+
