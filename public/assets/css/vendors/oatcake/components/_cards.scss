@@ -35,10 +35,11 @@
 }
 
 .card {
+    width: 350px;
     max-width: 375px;
 
     .img {
-        min-width: 350px;
+        width: 350px;
         min-height: 250px;
         border-radius: 10px;
 
@@ -58,6 +59,13 @@
             background-image: linear-gradient(45deg, map.get($theme-colors, "secondary") 50%, rgb(255, 255, 255) 50%);
             background-size: 26px 26px;
         }
+        &.four {
+            background-color: #ffffff;
+            opacity: 0.8;
+            background-image:  repeating-linear-gradient(45deg, #420039 25%, transparent 25%, transparent 75%, #420039 75%, #420039), repeating-linear-gradient(45deg, #420039 25%, #ffffff 25%, #ffffff 75%, #420039 75%, #420039);
+            background-position: 0 0, 14px 14px;
+            background-size: 28px 28px;
+        }
         @include media-lg {
             min-width: 300px;
         }
@@ -65,5 +73,8 @@
     .content {
         width: 100% !important;
         padding: 0 !important;
+    }
+    @include media-lg {
+        min-width: 250px;
     }
 }

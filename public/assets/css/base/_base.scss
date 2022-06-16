@@ -7,10 +7,3 @@ body {
 img {
     width: 100%;
 }
-pre {
-  background-color: map.get($theme-colors, "code");
-  color: map.get($theme-colors, "white");
-  padding: 1rem;
-  border-radius: 10px;
-  overflow-x: scroll;
-}

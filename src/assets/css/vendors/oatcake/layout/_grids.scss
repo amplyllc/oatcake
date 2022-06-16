@@ -11,9 +11,9 @@
 .grid-2 {
     @include media-lg {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
         justify-items: center;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
@@ -23,11 +23,8 @@
     grid-gap: 2rem;
     justify-content: center;
 
-    @include media-sm-md {
+    @include media-md {
         grid-template-columns: 1fr 1fr;
     }
 
-    @include media-md-lg {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }
