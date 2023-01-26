@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/img" 
+public_folder: "/assets/img"
+collections:
+  - name: "post"
+    label: "Blog Posts"
+    folder: "src/blog"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}"
+    fields:
+      - { label: "Blog Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "list", default: ["Guides & Insights"]}
+      - { label: "Author", name: "author", widget: "string", default: "Amply Team"}
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image caption", name: "image-alt", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "project"
+    label: "Projects"
+    folder: "src/portfolio"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}"
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Project Year", name: "year", widget: "number" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Industry", name: "industry", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image caption", name: "image-alt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

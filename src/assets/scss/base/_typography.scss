@@ -1,0 +1,112 @@
+// ================================
+// font styles
+// ================================
+h1 {
+    font-family: map.get($fonts, "secondary");
+}
+h2,
+h3,
+h4 {
+    font-family: map.get($fonts, "heading");
+}
+body {
+    font-family: map.get($fonts, "body");
+}
+
+// ================================
+// font sizing
+// ================================
+
+// sizing
+$font-size: 100%;
+
+// general
+* {
+    font-size: $font-size; 
+}
+h1 {
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.60rem;
+}
+h3 {
+    font-size: 1.45rem;
+}
+h4 {
+    font-size: 1.30rem;
+}
+h5 {
+    font-size: 1.15rem;
+}
+h6 {
+    font-size: 1rem;
+}
+small {
+    font-size: .9rem !important;
+}
+
+// media 
+@include media-sm {
+    * {
+        font-size: 1.15rem; 
+    }
+
+    h1 {
+        font-size: 1.90rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.60rem;
+    }
+    h4 {
+        font-size: 1.45rem;
+    }
+    h5 {
+        font-size: 1.30rem;
+    }
+    h6 {
+        font-size: 1.15rem;
+    }
+    small {
+        * {
+            font-size: 1rem !important;
+        }
+    }
+}
+// @include media-md {
+//     body, input, textarea {
+//         font-size: $font-size * 1.33; 
+//     }
+
+//     h1 {
+//         font-size: 1.75rem;
+//     }
+//     h2 {
+//         font-size: 1.60rem;
+//     }
+//     h3 {
+//         font-size: 1.45rem;
+//     }
+//     h4 {
+//         font-size: 1.30rem;
+//     }
+//     h5 {
+//         font-size: 1.15rem;
+//     }
+//     h6 {
+//         font-size: 1rem;
+//     }
+// }
+// @include media-lg {
+//     body {
+//         font-size: $font-size * 1.33; 
+//     }
+// }
+// @include media-xl {
+//     body {
+//         font-size: $font-size * 1.33; 
+//     }
+// }

@@ -1,0 +1,20 @@
+<form id="contact-form" name="contact-{{ pageTitle }}" action="/thankyou" netlify-honeypot="bot-field" netlify>
+    <div class="container">
+        <input type="text" name="company" placeholder="Company name" aria-label="Company name" class="item" required>
+        <input type="text" name="name" placeholder="Full name" aria-label="Full name" class="item" required>
+    </div>
+    <div class="container">
+        <input type="email" name="email" placeholder="Email" class="item" required>
+        <input type="tel" name="phone" placeholder="Phone number" class="item" required>
+    </div>
+    <input type="subject" class="form-control" name="subject" placeholder="Subject of message" required>
+    <textarea name="message" rows="3" placeholder="Your message" required></textarea>
+    <p class="d-none">
+        <label>
+        Don’t fill this out if you’re human: <input name="bot-field"/>
+        </label>
+    </p>
+    <div class="btn-div">
+        <button class="button default half rounded border secondary" type="submit">Send</button>
+    </div>
+</form>

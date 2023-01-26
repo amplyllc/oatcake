@@ -1,0 +1,13 @@
+<div class="blog card">
+    <button class="ptrn four" onClick="parent.location='{{ post.url }}'"></button>
+    <div class="content">
+        <div class="info">
+            <small>{{ post.data.date | postDate }}</small>
+        </div>
+        <a href="{{ post.url }}" class="underline text-primary"><h2>{{ post.data.title }}</h2></a>
+        <div class="author">
+            <img src="{{ post.data.authorImg }}">
+            <p>{{ post.data.author }}</p>
+        </div>
+    </div>
+</div>

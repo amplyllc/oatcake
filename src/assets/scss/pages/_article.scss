@@ -1,0 +1,52 @@
+.main-content {
+    // article w/ aside
+    &.reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 4rem;
+        height: 100%;
+        padding: 4rem 2rem 0 2rem;    
+        margin-bottom: 4rem;
+
+        .aside {
+            padding: 0;
+        }
+        .article {
+            padding: 0;
+        
+            .container {
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    overflow-y: scroll;
+        
+                    :nth-last-child(1) {
+                        padding-bottom: 4rem;
+                    }
+                }
+            }
+        }
+
+        // media
+        @include media-lg {
+            flex-direction: row !important;
+            justify-content: center;
+            height: calc(100vh - 81.8px);    
+            box-sizing: border-box;
+
+            main {
+                overflow-y: scroll;
+            }
+
+            .aside {
+                align-self: flex-start;
+            }
+
+            article {
+                justify-content: flex-start;
+                max-width: 800px;
+            }
+        }
+    } 
+}

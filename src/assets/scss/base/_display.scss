@@ -1,0 +1,153 @@
+// ===================
+// none
+// ===================
+.d-none {
+  display: none;
+}
+// ===================
+// inline
+// ===================
+.d-inline {
+  display: inline;
+}
+// ===================
+// inline-block
+// ===================
+.d-inline-block {
+  display: inline-block;
+}
+// ===================
+// block
+// ===================
+.d-block {
+  display: block;
+}
+// ===================
+// table
+// ===================
+.d-table {
+  display: table;
+}
+
+// ===================
+// table-cell
+// ===================
+.d-table-cell {
+  display: table-cell;
+}
+
+// ===================
+// table-row
+// ===================
+.d-table-row {
+  display: table-row;
+}
+
+// media
+@include media-sm {
+  .sm-d-none {
+    display: none;
+  }
+  .sm-d-inline {
+    display: inline;
+  }
+  .sm-d-block {
+    display: block;
+  }
+  .sm-d-table {
+    display: table;
+  }
+  .sm-d-table-cell {
+    display: table-cell;
+  }
+  .sm-d-table-row {
+    display: table-row;
+  }
+}
+@include media-sm-md {
+  .sm-d-inline-block {
+    display: inline-block;
+  }
+  .sm-md-d-block {
+    display: block;
+  }
+  .sm-md-d-table {
+    display: table;
+  }
+  .sm-md-d-table-row {
+    display: table-row;
+  }
+  .sm-md-d-table-cell {
+    display: table-cell;
+  }
+}
+@include media-md {
+  .md-d-none {
+    display: none;
+  }
+  .md-d-block {
+    display: block;
+  }
+  .md-d-inline {
+    display: inline;
+  }
+  .md-d-inline-block {
+    display: inline-block;
+  }
+  .md-d-table {
+    display: table;
+  }
+  .md-d-table-row {
+    display: table-row;
+  }
+  .md-d-table-cell {
+    display: table-cell;
+  }
+}
+@include media-lg {
+  .lg-d-none {
+    display: none;
+  }
+  .lg-d-block {
+    display: block;
+  }
+  .lg-d-inline {
+    display: inline;
+  }
+  .lg-d-inline-block {
+    display: inline-block;
+  }
+  .lg-d-table {
+    display: table;
+  }
+  .lg-d-table-row {
+    display: table-row;
+  }
+  .lg-d-table-cell {
+    display: table-cell;
+  }
+}
+@include media-xl {
+  .xl-d-none {
+    display: none;
+  }
+  .xl-d-block {
+    display: block;
+  }
+  .xl-d-inline {
+    display: inline;
+  }
+  .xl-d-inline-block {
+    display: inline-block;
+  }
+  .xl-d-table {
+    display: table;
+  }
+  .xl-d-table-row {
+    display: table-row;
+  }
+  .xl-d-table-cell {
+    display: table-cell;
+  }
+}
+

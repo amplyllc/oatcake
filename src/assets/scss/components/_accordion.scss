@@ -1,0 +1,85 @@
+.accordion {
+    min-width: 120px;
+
+    .container {
+        position: relative;
+        padding-top: 1rem;
+
+        &.active {
+            .content {
+                height: fit-content;
+                padding: 1rem 1rem !important;
+            }
+            .label {
+                &::after {
+                    content: '-';
+                    font-size: inherit;
+                }
+            }
+            &:last-child {
+                padding-bottom: 1rem;
+            }
+        }
+        .content {
+            position: relative;
+            height: 0;
+            text-align: start;
+            overflow: hidden;
+            transition: 0.5s;
+
+            li {
+                padding-top: 1rem;
+            }
+        }
+    }
+    .label {
+        position: relative;
+        color: black;
+        cursor: pointer;
+        padding-top: .5rem;
+        min-width: 115px;
+        font-weight: bold;
+        width: 100%;
+        box-sizing: border-box;
+
+        &::after {
+            content: '+';
+            color: black;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+        }
+        &:hover {
+            color: map.get($theme-colors, "primary");
+        }
+    }
+    
+    a {
+        color: black;
+
+        &:hover {
+            color: map.get($theme-colors, "primary");
+        }
+    }
+
+    // media
+    @include media-sm-md {
+        .container.active .content {
+            padding: 1rem 2rem !important;
+        }
+        .label::after {
+            right: 2rem;
+        }
+    }
+    @include media-md {
+        .container {
+            padding-top: 0;
+
+            .content li {
+                padding-top: .5rem;
+            }
+        }
+    }
+}
+  

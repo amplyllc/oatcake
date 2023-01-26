@@ -1,0 +1,43 @@
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+.faq {
+  background-color: map.get($theme-colors, "secondary");
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+  max-width: 800px;
+
+  .label{
+    color: map.get($theme-colors, "white");
+    padding: 1rem;
+    border-radius: 25px;
+
+    &::after {
+      color: map.get($theme-colors, "white");
+    }
+
+    &:hover {
+      color: map.get($theme-colors, "accent");
+      text-decoration: underline;
+    }
+  }
+  .content {
+    background-color: map.get($theme-colors, "white");
+    color: map.get($theme-colors, "black");
+    padding: 0 1rem;
+  }
+
+  // media
+  @include media-sm-md {
+    .label {
+      padding: 2rem;
+    }
+  }
+
+  @include media-xl {
+    max-width: 1000px;
+  }
+}

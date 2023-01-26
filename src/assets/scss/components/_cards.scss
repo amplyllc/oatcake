@@ -1,0 +1,80 @@
+// ===================
+// blog card
+// ===================
+.blog.card {
+    max-width: 375px;
+
+    .ptrn {
+        display: flex;
+        width: 100%;
+        margin-bottom: 2rem;
+        min-height: 250px;
+        max-height: 350px;
+
+
+        &:hover {
+            @include shrink;
+            @include transition-ease;
+        }
+    }
+    
+    // content
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 1rem;
+        width: 100% !important;
+
+        .title {
+            font-family: "FiraSansRegular";
+            color: map.get($theme-colors, "primary");
+            font-size: 1.5rem !important;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            text-align: start;
+        }
+    }
+
+    // author
+    .author {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        img {
+            width: 45px;
+        }
+    }
+
+    // media
+    @include media-sm {
+        .ptrn {
+            height: 350px;
+        }
+    }
+    @include media-lg {
+        max-width: 500px;
+
+        .img {
+            min-height: 450px;
+        }
+    }
+}
+.card {
+    width: 100%;
+    max-width: 375px;
+
+    .content {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    @include media-sm {
+        min-width: 375px;
+    }
+}

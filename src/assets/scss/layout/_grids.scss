@@ -1,0 +1,21 @@
+// ===================
+// grid
+// ===================
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+
+    @include media-lg {
+        &.two, &.three {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @include media-xl {
+        &.three {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+}

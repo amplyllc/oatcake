@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+---
+
+<!-- *** landing *** -->
+<section id="landing-{{pageTitle}}">
+    <div class="container row">
+        <div class="content">
+            <h1>Keep Your Customers Informed</h1>
+            <p>Explore our free resources to ensure your customers have instant access to your businesses most critical information.</p>
+            <div class="btn-div">
+                <a href="/learn" class="button double rounded secondary">Browse&nbsp;Guides</a>
+                <a href="/resources" class="button underline text-secondary">View&nbsp;Resources</a>
+            </div>
+        </div>
+        <div class="img">
+            {% include 'svg/landing.svg' %}
+        </div>
+    </div>
+</section><!-- /landing -->
+
+<!-- *** learn *** -->
+<section id="learn-{{pageTitle}}">
+    <div class="container row">
+        <div class="content">
+            <h2>Do It Yourself</h2>
+            <p>Learn to create a free modern and responsive website for your business without page-builder services like Wordpress.</p>
+        </div>
+        <div class="img">
+            {% include 'svg/code.svg' %}
+        </div>
+    </div>
+</section><!-- /learn -->
+
+<!-- *** help *** -->
+<section id="help-{{pageTitle}}">
+    <div class="container">
+        <div class="content">
+            <h2>Need Help?</h2>
+            <p>Our resources don't end here. Need help from an expert? <a href="/learn/how-to-choose-the-right-type-of-website">Learn how to choose the right developer</a> or <a href="#contact">reach out to us anytime.</a></p>
+        </div>
+    </div>
+</section><!-- /learn -->
+
+<!-- *** blog *** -->
+<section id="blog-{{pageTitle}}">
+    <div class="container">
+        <div class="content">
+            <h2>Latest Guides</h2>
+            <div class="grid two">
+                {%- for post in collections.post | reverse | limit(4)-%}
+                    {% include 'components/blog-card.njk' %}
+                {%- endfor -%}
+            </div>
+            <div class="d-center">
+                <a href="/learn" class="button rounded default secondary">View All</a>
+            </div>
+        </div>
+    </div>
+</section><!-- /blog -->

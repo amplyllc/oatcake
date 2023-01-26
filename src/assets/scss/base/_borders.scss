@@ -1,0 +1,75 @@
+.border-none {
+    border: none;
+}
+// ===================
+// border-color
+// ===================
+.border-primary {
+    border: solid map.get($theme-colors, "primary");
+}
+.border-secondary {
+    border: solid map.get($theme-colors, "secondary");
+}
+.border-accent {
+    border: solid map.get($theme-colors, "accent");
+}
+// ===================
+// border-width
+// ===================
+.border-1 {
+    border-width: 1px;
+}
+.border-2 {
+    border-width: 2px;
+}
+.border-3 {
+    border-width: 3px;
+}
+.border-4 {
+    border-width: 4px;
+}
+.border-5 {
+    border-width: 5px;
+}
+// ===================
+// border-radius
+// ===================
+.rounded {
+    border-radius: 5px !important;
+}
+.round {
+    border-radius: 1000px;
+}
+.rounded-top {
+    border-radius: 10px 10px 0 0;
+}
+.rounded-end {
+    border-radius: 0 10px 10px 0;
+}
+.rounded-bottom {
+    border-radius: 0 0 10px 10px;
+}
+.rounded-start {
+    border-radius: 10px 0 0 10px;
+}
+.circle {
+    border-radius: 1000px;
+}
+// ===================
+// border-radius sizes
+// ===================
+.rounded-1 {
+    border-radius: 2px;
+}
+.rounded-2 {
+    border-radius: 4px;
+}
+.rounded-3 {
+    border-radius: 6px;
+}
+.rounded-4 {
+    border-radius: 8px;
+}
+.rounded-5 {
+    border-radius: 10px;
+}

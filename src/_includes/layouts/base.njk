@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }} | {{ site.name }}</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
+
+    <link rel="canonical" href="{{ site.url }}{{ link }}">
+    <meta name="author" content="{{ site.authorName }}">
+    <meta name="description" content="{{ description }}">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <meta name="msapplication-TileColor" content="{{ site.metaColor }}">
+    <meta name="theme-color" content="{{ site.metaColor }}">
+
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{ site.url }}{{pageTitle}}"/>
+    <meta property="og:image" content="/assets/og-image.jpg"/>
+    <!-- <meta property="og:image:secure_url" content="/assets/img/social.jpg"/> -->
+    <meta name="twitter:image:src" content="/assets/og-image.jpg">
+
+    <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/FiraSans-Regular.ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/FiraSans-Bold.ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- <noscript>
+        <link rel="stylesheet" href="/assets/css/local.css">
+    </noscript> -->
+  </head>
+  <body id="body-{{pageTitle}}" class="{{ type }}">
+
+    <!-- *** header *** -->
+    <header id="header-{{ type }}">
+
+      {% include 'components/navbar.njk' %}
+
+    </header><!-- /header -->
+
+    <!-- *** content *** -->
+    <div class="main-content {% if (toc) %}reverse{% endif %}">
+      <main>
+        {{ content | safe }}
+      </main>
+
+      {% if (toc) %}
+      <section id="aside-{{pageTitle}}" class="aside">
+          <div class="container">
+              <aside class="content start">
+                  <h2>Table Of Contents</h2>
+                  {{ content | toc | safe }}
+              </aside>
+          </div>
+      </section>
+      {% endif %}
+    </div><!-- /content-->
+
+
+    {% if (faq) %}
+    <!-- *** faq *** -->
+    <section id="faq-{{pageTitle}}">
+        <div class="container">
+            <div class="content">
+                <h2>{% if (faqTitle) %}{{faqTitle}}{% else %}FAQ{% endif %}</h2>
+                {% if (faqDesc) %}<p>{{faqDesc}}</p>{% else %}{% endif %}
+            </div>
+            {% include 'components/faq.njk' %}
+        </div>
+    </section><!-- /faq -->
+    {% endif %}
+
+    <!-- *** contact *** -->
+    <section id="contact-{{pageTitle}}" class="contact">
+        <div class="container">
+            <div class="content">
+                <h2>{% if (contactTitle) %}{{contactTitle}}{% else %}Contact{% endif %}</h2>
+                {% if (contactDesc) %}<p>{{contactDesc}}</p>{% else %}{% endif %}
+            </div>
+            {% include 'components/contact-form.njk' %}
+        </div>
+    </section><!-- /contact -->
+
+    {% include 'components/footer.njk' %}
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        };
+
+        var currentYear = new Date().getFullYear();
+        document.getElementById("copyYear").innerHTML = currentYear;
+    </script>
+
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/components.js"></script>
+  </body>
+</html>

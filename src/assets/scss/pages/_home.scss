@@ -1,0 +1,31 @@
+// ===================
+// featured
+// ===================
+#featured {
+  padding-top: 4rem;
+
+  .container {
+    display: flex;
+    overflow-x: scroll;
+
+    img {
+      min-width: 300px;
+    }
+  }
+}
+// ===================
+// learn
+// ===================
+#learn {
+  .img {
+    min-width: 250px;
+
+    @include media-sm {
+      min-width: 350px;
+    }
+    @include media-md {
+      min-width: 450px;
+    }
+  }
+}
+

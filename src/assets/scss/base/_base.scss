@@ -1,0 +1,21 @@
+// ===================
+// general styles
+// ===================
+body {
+  background-color: map.get($theme-colors, "white");
+
+  div.content.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include media-md {
+      flex-direction: row;
+    }
+  }
+}
+img {
+    width: 100%;
+}
+.bg-none {
+  background: none !important;
+}

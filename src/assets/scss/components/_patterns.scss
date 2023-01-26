@@ -1,0 +1,29 @@
+.ptrn {
+    width: 100%;
+    min-height: 250px;
+    border-radius: 10px;
+
+    &.one {
+        background-color: #ffffff;
+        opacity: 0.8;
+        background: linear-gradient(135deg, #cec00055 25%, transparent 25%) -12px 0/ 24px 24px, linear-gradient(225deg, #cec000 25%, transparent 25%) -12px 0/ 24px 24px, linear-gradient(315deg, #cec00055 25%, transparent 25%) 0px 0/ 24px 24px, linear-gradient(45deg, #cec000 25%, #ffffff 25%) 0px 0/ 24px 24px;
+    }
+    &.two {
+        background-color: #e5e5f7;
+        opacity: 0.8;
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 26px ), repeating-linear-gradient( map.get($theme-colors, "primary-dark"), map.get($theme-colors, "primary") );
+    }
+    &.three {
+        background-color: #e5e5f7;
+        opacity: 0.8;
+        background-image: linear-gradient(45deg, map.get($theme-colors, "secondary") 50%, rgb(255, 255, 255) 50%);
+        background-size: 26px 26px;
+    }
+    &.four {
+        background-color: #ffffff;
+        opacity: 0.8;
+        background-image:  repeating-linear-gradient(45deg, #420039 25%, transparent 25%, transparent 75%, #420039 75%, #420039), repeating-linear-gradient(45deg, #420039 25%, #ffffff 25%, #ffffff 75%, #420039 75%, #420039);
+        background-position: 0 0, 14px 14px;
+        background-size: 28px 28px;
+    }
+}

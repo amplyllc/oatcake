@@ -1,0 +1,113 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+
+    > .container:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        max-width: 1400px;
+
+        > .content:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+            width: 100%;
+
+            p {
+                max-width: 800px;
+            }
+        }
+
+        // img
+        .img {
+            min-width: 250px;
+            max-width: 450px;
+        }
+        // logo
+        .logo {
+            width: 45px;
+        }
+
+        .img, .logo {
+            svg {
+                width: 100%;
+            }
+        }
+
+        &.reverse, .content.reverse {
+            flex-direction: column-reverse;
+        }
+        &.start, .content.start {
+            align-items: flex-start;
+            text-align: start;
+        }
+    }
+
+    a, li a {
+        color: map.get($theme-colors, 'secondary');
+
+        &:hover {
+            color: map.get($theme-colors, 'primary');
+        }
+    }
+
+    // media
+    @include media-sm {
+        > .container:first-child {
+            .img {
+                min-width: 350px;
+            }
+        }
+    }
+    @include media-md {
+        > .container:first-child {
+            .img {
+                min-width: 450px;
+            }
+            .logo {
+                width: 55px;
+            }
+        }
+    }
+    @include media-lg {
+        > .container:first-child {
+            &.row {
+                flex-direction: row !important;
+
+                > .content:first-child {
+                    align-items: flex-start;
+                    text-align: start;
+                    width: fit-content;
+
+                    p {
+                        max-width: 500px;
+                    }
+                }
+                &.reverse {
+                    flex-direction: row-reverse !important;
+                }
+            }
+        }
+    }
+    @include media-xl {
+        > .container:first-child {  
+            .img {
+                min-width: 550px;
+                max-width: 550px;
+            }
+            .logo {
+                width: 65px;
+            }
+        }
+    }
+}

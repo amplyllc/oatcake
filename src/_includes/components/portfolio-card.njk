@@ -1,0 +1,16 @@
+<div class="portfolio card">
+    <button class="img" onClick="parent.location='{{ project.data.site }}'">
+        <picture class="d-flex default"> 
+            <source srcset="{{ project.data.image }}" media="(min-width: 611px)"> 
+            <img src="{{ project.data.imageM }}" alt="{{ project.data.imageAlt }}" height=“215” width=“320” loading=“lazy” decoding=“async”> 
+        </picture>
+    </button>
+    <div class="content d-center">
+        <h2>{{ project.data.title }}</h2>
+        <p>{{ project.data.description }}</p>
+        <div class="btn-div">
+            <button class="button double round secondary border" onClick="parent.location='{{ project.data.site }}'">View Site</button>
+            <button class="underline text-secondary" onClick="parent.location='{{ project.data.source }}'">View Source</button>
+        </div>
+    </div>
+</div>

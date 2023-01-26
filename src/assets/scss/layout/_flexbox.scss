@@ -1,0 +1,143 @@
+// ===================
+// flexbox
+// ===================
+.d-flex {
+  display: flex;
+
+  &.default {
+    justify-content: center;
+    align-items: center;
+  }
+}
+// default
+.d-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+// flex flow
+.row-wrap {
+  flex-flow: row wrap;
+}
+
+// flex direction
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+// justify content
+.j-c-s {
+  justify-content: start;
+}
+.j-c-spc {
+  justify-content: space-between;
+}
+.j-c-c {
+  justify-content: center;
+}
+.j-c-e {
+  justify-content: end;
+}
+// align items
+.a-i-s {
+  align-items: start;
+}
+.a-i-c {
+  align-items: center;
+}
+.a-i-e {
+  align-items: end;
+}
+
+// media classes
+@include media-sm {
+  .sm-flex-row {
+    flex-direction: row;
+  }
+  .sm-d-flex {
+    display: flex;
+  }
+  .sm-j-c-s {
+    justify-content: start;
+  }
+  .sm-j-c-c {
+    justify-content: center;
+  }
+  .sm-j-c-e {
+    justify-content: end;
+  }
+  .sm-a-i-s {
+    align-items: start;
+  }
+  .sm-a-i-c {
+    align-items: center;
+  }
+  .sm-a-i-e {
+    align-items: end;
+  }
+}
+@include media-max-sm {
+  .max-sm-flex-column {
+    flex-direction: column;
+  }
+}
+@include media-sm-md {
+  .sm-md-d-flex {
+    display: flex;
+  }
+  .sm-md-a-i-s {
+    align-items: start;
+  }
+}
+@include media-md {
+  .md-flex-row {
+    flex-direction: row;
+  }
+  .md-d-flex {
+    display: flex;
+  }
+  .md-j-c-s {
+    justify-content: start;
+  }
+  .md-j-c-c {
+    justify-content: center;
+  }
+  .md-j-c-e {
+    justify-content: end;
+  }
+  .md-a-i-s {
+    align-items: start !important;
+  }
+  .md-a-i-c {
+    align-items: center;
+  }
+  .md-a-i-e {
+    align-items: end;
+  }
+}
+@include media-lg {
+  .lg-d-flex {
+    display: flex;
+  }
+  .lg-flex-row {
+    flex-direction: row;
+  }
+}
+@include media-xl {
+  .xl-d-flex {
+    display: flex;
+  }
+  .xl-flex-row {
+    flex-direction: row;
+  }
+}

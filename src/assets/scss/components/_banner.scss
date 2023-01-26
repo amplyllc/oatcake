@@ -1,0 +1,17 @@
+.heading-banner {
+    display: flex;
+    background-color: map.get($theme-colors, "primary-dark");
+
+    .img {
+        width: 45px;
+    }
+    .content {
+        color: map.get($theme-colors, "white");
+        text-align: center;
+    }
+
+    // media
+    @include media-md {
+        .img { width: 55px; }
+    }
+}

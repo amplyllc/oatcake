@@ -1,0 +1,14 @@
+{
+    "name": "Oatcake",
+    "short_name": "Oatcake",
+    "icons": [
+        {
+            "src": "/assets/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#D34E8C",
+    "background_color": "#D34E8C",
+    "display": "standalone"
+}

@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+faq: yes
+---
+
+<!-- who -->
+<section id="about-{{pageTitle}}">
+    <div class="container row">
+        <div class="content">
+            <h2>A Simple Project</h2>
+            <p>Oatcake is maintained by Amply LLC, a small web design and development team. Oatcake is an organized, open-source collection of the information and data that accumulates during web development.</p>
+        </div>
+        <div class="img">
+            <picture>
+                <source srcset="/assets/img/about-us.png" media="(min-width: 500px)"> 
+                <img src="/assets/img/about-us-m.png" alt="about us graphic" loading=“lazy” decoding=“async”> 
+            </picture>
+        </div>
+    </div>
+</section><!-- /who -->
+
+<!-- what -->
+<section id="what-{{pageTitle}}">
+    <div class="container row reverse">
+        <div class="content">
+            <h2>Making Websites Easier</h2>
+            <p>No matter what level of effort you are commited to, Oatcake offers resources to guide you through the process to help ensure you get a quality website.</p>
+        </div>
+        <div class="img">
+            <picture>
+                <source srcset="/assets/img/builders.png" media="(min-width: 500px)"> 
+                <img src="/assets/img/builders-m.png" alt="builders building a website graphic" loading=“lazy” decoding=“async”> 
+            </picture>
+        </div>
+    </div>
+</section><!-- /what -->
+
+<!-- mission -->
+<section id="mission-{{pageTitle}}">
+    <div class="container">
+        <div class="content">
+            <h2>We're Here For You</h2>
+            <p>Didn't find what you were looking for? Explore our <a href="#faq-{{pageTitle}}">Frequently Asked Questions</a> or <a href="#contact-{{pageTitle}}">contact us anytime</a>. Alternatively, for web design and development services, visit <a href="https://amply.llc">amply.llc</a> for information.</p>
+        </div>
+    </div>
+</section><!-- /mission -->

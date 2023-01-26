@@ -1,0 +1,103 @@
+footer {
+  background-color: map.get($theme-colors, 'primary');
+  color: map.get($theme-colors, 'white');
+  
+  a, button {
+    color: map.get($theme-colors, 'white');
+
+    &:hover {
+        color: map.get($theme-colors, 'accent');
+    }
+  }
+
+  h2 {
+    color: map.get($theme-colors, 'white');
+  }
+
+  hr {
+    color: map.get($theme-colors, "primary");
+    margin: 0 2rem;
+  }
+  
+  // nav
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .nav {
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+
+  // logo
+  .logo {
+    width: 150px;
+  }
+
+  .social {    
+    display: flex;
+    gap: 1rem;
+    
+    svg {
+      width: 25px;
+    }
+  }
+
+  // copyright
+  .copyright {
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  // media
+  @include media-sm-md {
+    .logo {
+      width: 200px;
+    }
+    .copyright {
+      text-align: start;
+
+      .text-end {
+        text-align: end;
+      }
+    }
+  }
+  @include media-md {
+    .logo {
+      width: 250px;
+    }
+    .copyright {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .social svg {
+      width: 30px;
+    }
+  }
+  @include media-lg {
+    .navbar {
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+      gap: 2rem;
+    }
+  }
+  @include media-xl { 
+    .social svg {
+      width: 35px;
+    }
+  }
+}

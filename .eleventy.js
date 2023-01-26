@@ -2,7 +2,8 @@ const { DateTime } = require("luxon");
 
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
-const markdownItToc = require('markdown-it-toc-done-right');
+const pluginTOC = require('eleventy-plugin-toc')
+
 
 module.exports = function(eleventyConfig) {
 
@@ -11,9 +12,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/admin');
     eleventyConfig.addPassthroughCopy('./src/favicon.png');
 
+    eleventyConfig.addPlugin(pluginTOC);
+
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
-    })
+    });
+
+    eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
     eleventyConfig.setLibrary("md",
         markdownIt({
@@ -21,7 +26,6 @@ module.exports = function(eleventyConfig) {
             linkify: true,
             typographer: true,
         }).use(markdownItAnchor, {})
-          .use(markdownItToc, {})
     );
 
     return {

@@ -1,0 +1,20 @@
+---
+title: Learn
+pageTitle: learn
+type: interior
+layout: 'layouts/base.njk'
+description: Learn everything website related. Learn how to choose the right type of website so you can choose the right developer, or even do it yourself.
+tags: ignore
+faq: yes
+---
+
+{% include 'components/heading-banner.njk' %}
+
+<!-- *** blog *** -->
+<section id="blog-{{pageTitle}}">
+    <div class="grid two">
+        {%- for post in collections.post | reverse -%}
+            {% include 'components/blog-card.njk' %}
+        {%- endfor -%}
+    </div>
+</section><!-- /blog -->

@@ -1,5 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const header = document.querySelector("header");
+const fixed = header.offsetTop;
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -16,3 +18,4 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+

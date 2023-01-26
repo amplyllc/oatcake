@@ -1,0 +1,298 @@
+// base
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+// ===================
+// buttons
+// ===================
+.button {
+  outline-offset: -3px;
+
+  // base
+  &.default {
+    padding: 1rem 1.5rem;
+  }
+  &.double {
+    padding: 1rem 3rem;
+  }
+  &.half {
+    padding: 1rem 0;
+    width: 50%;
+  }
+  &.full {
+    padding: 1rem 0;
+    width: 100%;
+  }
+  &.shadow {
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+  }
+
+  // primary
+  &.primary {
+    background: map.get($theme-colors, "primary");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($theme-colors, "primary") !important;
+      outline: solid 3px map.get($theme-colors, "primary");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($theme-colors, "primary") !important;
+      border-bottom: solid 3px map.get($theme-colors, "primary");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($theme-colors, "primary") !important;
+      color: map.get($theme-colors, "white") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // secondary
+  &.secondary {
+    background: map.get($theme-colors, "secondary");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($theme-colors, "secondary") !important;
+      outline: solid 3px map.get($theme-colors, "secondary");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($theme-colors, "secondary") !important;
+      border-bottom: solid 3px map.get($theme-colors, "secondary");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($theme-colors, "secondary") !important;
+      color: map.get($theme-colors, "accent") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // accent
+  &.accent {
+    background: map.get($theme-colors, "accent");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($theme-colors, "accent") !important;
+      outline: solid 3px map.get($theme-colors, "accent");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($theme-colors, "accent") !important;
+      border-bottom: solid 3px map.get($theme-colors, "accent");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($theme-colors, "accent") !important;
+      color: map.get($theme-colors, "secondary") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // success
+  &.success {
+    background: map.get($colors, "success");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "success") !important;
+      outline: solid 3px map.get($colors, "success");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($colors, "success") !important;
+      border-bottom: solid 3px map.get($colors, "success");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($colors, "success") !important;
+      color: map.get($theme-colors, "white") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+  // danger
+  &.danger {
+    background: map.get($colors, "danger");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "danger") !important;
+      outline: solid 3px map.get($colors, "danger");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($colors, "danger") !important;
+      border-bottom: solid 3px map.get($colors, "danger");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($colors, "danger") !important;
+      color: map.get($theme-colors, "white") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // info
+  &.info {
+    background: map.get($colors, "info");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "info") !important;
+      outline: solid 3px map.get($colors, "info");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($colors, "info") !important;
+      border-bottom: solid 3px map.get($colors, "info");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($colors, "info") !important;
+      color: map.get($theme-colors, "white") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // warning
+  &.warning {
+    background: map.get($colors, "warning");
+    color: map.get($theme-colors, "black");
+
+    &.outline {
+      background: none !important;
+      outline: solid 3px map.get($colors, "warning");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($colors, "warning") !important;
+      border-bottom: solid 3px map.get($colors, "warning");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($colors, "warning") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // light
+  &.light {
+    background: map.get($colors, "light");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "light") !important;
+      outline: solid 3px map.get($colors, "light");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($colors, "light") !important;
+      border-bottom: solid 3px map.get($colors, "light");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($colors, "light") !important;
+      color: map.get($theme-colors, "white") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // dark
+  &.dark {
+    background: map.get($colors, "dark");
+    color: map.get($theme-colors, "white");
+
+    &.outline {
+      background: none !important;
+      color: map.get($colors, "dark") !important;
+      outline: solid 3px map.get($colors, "dark");
+      outline-offset: -3px;
+    }
+    &.underline {
+      background: none !important;
+      color: map.get($colors, "dark") !important;
+      border-bottom: solid 3px map.get($colors, "dark");
+      outline-offset: -3px;
+    }
+    &:hover {
+      background: map.get($colors, "dark") !important;
+      color: map.get($theme-colors, "white") !important;
+
+      @include shrink;
+      @include transition-ease;
+    }
+  }
+
+  // black
+  &.black {
+    background: map.get($theme-colors, "black");
+    color: map.get($theme-colors, "white");
+  }
+
+  // none
+  &.none {
+    border: none;
+    background: none;
+  }
+}
+
+// ===================
+// button-div
+// ===================
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  &.start {
+    justify-content: flex-start !important;
+  }
+}
+
+
+// underline
+.underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}

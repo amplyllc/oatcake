@@ -1,0 +1,18 @@
+// @import url("");
+
+@font-face {
+    font-family: 'FiraSansBold';
+    font-style: bold;
+    font-display: swap;
+    font-weight: bold;
+    src: local('FiraSansBold'),
+         url('/assets/fonts/FiraSans-Bold.ttf') format('truetype') 
+}
+@font-face {
+    font-family: 'FiraSansRegular';
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+    src: local('FiraSansRegular'),
+         url('/assets/fonts/FiraSans-Regular.ttf') format('truetype') 
+}
